@@ -7,11 +7,11 @@
 # 2. Calculate the multiplication for these 5 numbers and print
 #    it out.
    
-product = 1
-for i in range(5):
-    num = float(input("Enter a number: "))
-    product *= num
-print("The product of the 5 numbers is:", product)
+# product = 1
+# for i in range(5):
+#     num = float(input("Enter a number: "))
+#     product *= num
+# print("The product of the 5 numbers is:", product)
 
 ## Task 1: 'time' library
 
@@ -20,11 +20,11 @@ print("The product of the 5 numbers is:", product)
 # function to create a 10 seconds countdown timer that counts
 # to 1, printing the number of seconds remaining every second.
 
-import time
-for i in range(10, 0, -1):
-    print(i, "seconds remaining...")
-    time.sleep(1)
-print("Time's up!")
+# import time
+# for i in range(10, 0, -1):
+#     print(i, "seconds remaining...")
+#     time.sleep(1)
+# print("Time's up!")
 
 
 # **Task 1b**:
@@ -32,11 +32,11 @@ print("Time's up!")
 # asking the user for the number to countdown from, before
 # counting down every second from the number given by the user.
 
-countdown_start = int(input("Enter the number to countdown from: "))
-for i in range(countdown_start, 0, -1):
-    print(i, "seconds remaining...")
-    time.sleep(1)
-print("Time's up!")
+# countdown_start = int(input("Enter the number to countdown from: "))
+# for i in range(countdown_start, 0, -1):
+#     print(i, "seconds remaining...")
+#     time.sleep(1)
+# print("Time's up!")
 
 # ## Task 2: 'random' library
 
@@ -48,13 +48,13 @@ print("Time's up!")
 # Using the 'random' library, create 20 numbers between 0 and
 # 9999 randomly.
 
-import random
-# Task 2a
-random_number = random.randint(1, 6)
-print("Random number between 1 and 6:", random_number)
-# Task 2b
-random_numbers = [random.randint(0, 9999) for _ in range(20)]
-print("20 random numbers between 0 and 9999:", random_numbers)  
+# import random
+# # Task 2a
+# random_number = random.randint(1, 6)
+# print("Random number between 1 and 6:", random_number)
+# # Task 2b
+# random_numbers = [random.randint(0, 9999) for _ in range(20)]
+# print("20 random numbers between 0 and 9999:", random_numbers)  
 
 
 # ## Task 3: Print Boolean Value & Condition
@@ -75,18 +75,18 @@ print("20 random numbers between 0 and 9999:", random_numbers)
 # the "==" operator.
 
 # Task 3a
-bool_var = True
-print("Boolean value:", bool_var)
-# Task 3b
-bool_var1 = True
-bool_var2 = True
-print("Comparing bool_var1 and bool_var2:", bool_var1 == bool_var2
-)
-# Task 3c
-bool_var1 = True
-bool_var2 = False
-print("Comparing bool_var1 and bool_var2:", bool_var1 == bool_var2
-)
+# bool_var = True
+# print("Boolean value:", bool_var)
+# # Task 3b
+# bool_var1 = True
+# bool_var2 = True
+# print("Comparing bool_var1 and bool_var2:", bool_var1 == bool_var2
+# )
+# # Task 3c
+# bool_var1 = True
+# bool_var2 = False
+# print("Comparing bool_var1 and bool_var2:", bool_var1 == bool_var2
+# )
 
 ## Task 5: Random Number Guessing Game
 
@@ -102,10 +102,10 @@ print("Comparing bool_var1 and bool_var2:", bool_var1 == bool_var2
 # 1. True (If the answer is correct)
 # 2. False (If the answer is wrong)
 
-guess = int(input("Enter your guess (1-10): "))
-num1 = random.randint(1, 10)
-print("Random number generated:", num1)
-print("Is your guess correct?", guess == num1)
+# guess = int(input("Enter your guess (1-10): "))
+# num1 = random.randint(1, 10)
+# print("Random number generated:", num1)
+# print("Is your guess correct?", guess == num1)
 
 ## Task 6: Random Multiplication Quiz
 
@@ -119,15 +119,94 @@ print("Is your guess correct?", guess == num1)
 # between 1 and 10. The user should input the number of questions
 # they want to attempt.
 
-num_questions = int(input("How many multiplication questions do you want to attempt? "))
-score = 0
-for _ in range(num_questions):
-    num1 = random.randint(1, 10)
-    num2 = random.randint(1, 10)
-    answer = int(input(f"What is {num1} x {num2}? "))
-    if answer == num1 * num2:
-        print("Correct!")
-        score += 1
-    else:
-        print(f"Wrong! The correct answer is {num1 * num2}.")
-print(f"You got {score} out of {num_questions} correct!")
+# num_questions = int(input("How many multiplication questions do you want to attempt? "))
+# score = 0
+# for _ in range(num_questions):
+#     num1 = random.randint(1, 10)
+#     num2 = random.randint(1, 10)
+#     answer = int(input(f"What is {num1} x {num2}? "))
+#     if answer == num1 * num2:
+#         print("Correct!")
+#         score += 1
+#     else:
+#         print(f"Wrong! The correct answer is {num1 * num2}.")
+# print(f"You got {score} out of {num_questions} correct!")
+
+## Task 7: Even or Odd Checker
+
+# Write a program that asks the user to enter a number. The
+# program then tells the user whether the number is even
+# (True) or odd (False).
+
+# Your program needs to:
+# 1. Ask user for an integer input.
+# 2. Check if there is any remainder when user input is divided
+#    by 2 (using '%').
+# 3. Print 'True' if number is even, otherwise print 'False'.
+
+# num = int(input("What number?\n"))
+# remainder = num % 2
+# if remainder == 0:
+#     print("It is even.")
+# else:
+#     print("It is odd.")
+
+## Task 8: Multiple Check Program
+
+# Create a program where the user enters 2 numbers. The
+# program then checks if the first number is a multiple of
+# the second number.
+
+# Your program needs to:
+# 1. Get user to input 2 numbers.
+# 2. Check if there is any remainder when number #1 is divided
+#    by number #2
+# 3. Print 'True' if number #1 is a multiple of number #2,
+#    otherwise print 'False'.
+
+# num_1 = int(input("What is number 1?\n"))
+# num_2 = int(input("What is number 2?\n"))
+# remainder = num_1%num_2
+# if remainder == 0:
+#     print("Number 1 is a multiple of Number 2.")
+# else:
+#     print("Number 1 is not a multiple of Number 2.")
+
+# if num_1 % num_2 == 0:
+#     print("Number 1 is a multiple of Number 2.")
+# else:
+#     print("Number 1 is not a multiple of Number 2.")
+# attempt = 3
+# print("Guess the number between 1 and 100. You have " + str(attempt )+ " attempts.")
+# import random
+# number = random.randint(1,100)
+# print(number)
+# for i in range(attempt):
+#     guess = int(input("Enter your guess "))
+#     print("Attempt " + str(i+1) + "/" + str(attempt))
+#     if guess > number:
+#         print("It is too high.")
+#     elif guess < number:
+#         print("It is too low.")
+#     else:
+#         print("It is correct")
+#         break
+# print("Game Over. The number was " + str(number))
+
+# Advanced features:​
+
+# Allow the user to choose a difficulty level at the beginning of the
+# game, which will adjust the range from which the random number
+# is generated, or the number of attempts allowed.​
+
+# Implement a scoring system where the user starts with a certain
+# score, and points are deducted based on the number of attempts
+# taken to guess the number correctly. The fewer attempts used, the
+# higher the final score.​
+
+# After a game finishes, whether the user guesses the number or
+# runs out of attempt, offer them the option to play again.​
+
+# Provide a hint after a certain number of incorrect guesses, such as
+# indicating if the guess is within a certain range of the target
+# number (e.g. within 10 numbers higher or lower).​
