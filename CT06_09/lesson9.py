@@ -35,6 +35,47 @@
 # find is_num1_even , is_num2_even , is_num3_even
 
 
-num_of_days = int(input("How many days have you borrowed a book?\n"))
-if num_of_days > 25:
-    print("Remember to return your book!")
+# num_of_days = int(input("How many days have you borrowed a book?\n"))
+# if num_of_days > 25:
+#     print("Remember to return your book!")
+
+# # Task 4: Apple Shop
+# **Task 4a**:
+# Draw out the flowchart (on a piece of paper) of a program for
+# the user to buy apples and calculate the price.
+
+# Each apple costs $1
+
+# 1. Ask the user how many apples they want to buy
+# 2. If the user wants to buy more than 10 apples:
+#    print "You will get a 10% discount for buying that many
+#    apples!"
+# 4. Print the price of the purchase
+# num_apples = int(input("How many apples do you want to buy?\n"))
+# if num_apples > 10:
+#     print("You will get a 10% discount for buying that many apples!")
+#     price = num_apples * 0.9
+# else:
+#     price = num_apples * 1
+# print(f"The price of your purchase is ${price:.2f}")
+
+#  Task 5: Fruits Shop
+# **Task 5a**:
+# Draw out the flowchart (on a piece of paper) of a program for
+# the fruit shop, "FruitiFresh". FruitiFresh sells 2 fruits,
+# Apple & Orange with the following pricing scheme:
+
+# Apple:
+# 1 Apple = 60 cents
+# If buy more than 5 apples, get 10% discount for all apples
+
+# Orange:
+# 1 Orange = 90 cents
+# If buy more than 5 oranges, get 10% discount for all oranges
+
+# You want to create a program that:
+# 1. Asks the user for the number of apples and oranges they
+#    want to buy.
+# 2. Print total price of the fruits
+
+input()
