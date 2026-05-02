@@ -78,4 +78,18 @@
 #    want to buy.
 # 2. Print total price of the fruits
 
-input()
+# num_apples = int(input("How many apples do you want?\n"))
+# num_oranges = int(input("How many orange do you want?\n"))
+# if num_apples > 5:
+#     print("You have a 10% discount for apples.")
+#     cost_apples = num_apples * 0.60 * 0.90
+# else:
+#     cost_apples = num_apples * 0.60
+# if num_oranges > 5:
+#     print("You have a 10% discount for oranges.")
+#     cost_oranges = num_oranges * 0.90 *0.90
+# else:
+#     cost_oranges = num_oranges * 0.90
+# total = cost_apples + cost_oranges
+# print("It cost $" + str(total))
+
